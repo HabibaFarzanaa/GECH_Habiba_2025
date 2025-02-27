@@ -1,0 +1,79 @@
+<!-- align the items in 1D array either row or column-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+
+        *{
+            margin:0 !important;
+            padding: 0 !important;
+        }
+
+        body{
+            padding: 50px;
+        }
+        .container{
+            width: 20vw;
+            height: 20vh;
+            border: 2px solid rgb(67, 65, 62);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 5px;
+            align-items: end; 
+            
+        }
+        
+        .child{
+            height: 20px;
+            width: 20px;
+            border: 2px solid black;
+            text-align: center;
+        } 
+
+        
+        
+        /* .first{
+            align-self: flex-start;
+        }
+
+        .secnd{
+            flex-grow: 4;
+        }
+
+        .thir{
+            flex-shrink: 10;
+        }
+        .fiv{
+            align-self: flex-end;
+        } */
+    </style>
+</head>
+<body>
+    <h1>This is Flex in CSS</h1>
+    <center>
+    <div class="container">
+        <div class="child first">1</div>
+        <div class="child secnd">2</div>
+        <div class="child thir">3</div>
+        <div class="child four">4</div>
+        <div class="child fiv">5</div>
+
+        <!-- <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div> -->
+    </div>
+</center>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+        :root{
+            --aqua: rgb(233, 72, 72);
+            --green: green;
+        }
+
+        div{
+            padding: 20px;
+        }
+
+        .ptag{
+            background-color: var(--aqua);
+        }
+
+        .divtag{
+            background-color: var(--green);
+        }
+
+        .ptag1{
+            background-color: var(--aqua);
+        }
+        .divtag1{
+            background-color: var(--green);
+        }
+
+        .con{
+            border: 2px solid brown;
+            height: 20vh;
+            width: 30vw;
+            position: relative;
+        }
+        .fir{
+            border: 2px solid black;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            z-index: 1;
+            background-color: aqua;
+        }
+        .sec{
+            border: 2px solid black;
+            position: relative;
+           z-index: 100;
+           background-color: antiquewhite;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="ptag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore libero accusamus accusantium. Eum tempora consequatur impedit sed dolor odit animi possimus atque! Impedit, id et saepe iusto optio consequuntur praesentium!</div>
+    <div class="divtag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis amet assumenda ex a provident, earum atque corrupti vero omnis ut libero, voluptas repellat! Praesentium quod accusantium velit cumque pariatur enim.</div>
+
+    <div class="ptag1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore libero accusamus accusantium. Eum tempora consequatur impedit sed dolor odit animi possimus atque! Impedit, id et saepe iusto optio consequuntur praesentium!</div>
+    <div class="divtag1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis amet assumenda ex a provident, earum atque corrupti vero omnis ut libero, voluptas repellat! Praesentium quod accusantium velit cumque pariatur enim.</div>
+
+    <div class="con">
+        <div class="child fir">1</div>
+        <div class="child sec">2</div>
+
+    </div>
+</body>
+</html>

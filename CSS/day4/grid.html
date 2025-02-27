@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+
+<style>
+    .container {
+        width: 50vw;
+        height: 80vh;
+        border: 3px solid brown;
+        display: grid;
+        grid-template-columns: [firstcol]auto auto auto;
+        grid-template-rows: 120px 200px auto;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .child {
+        /*height: 40px;
+        width: 40px; */
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+
+    }
+
+    .thir{
+        grid-column: firstcol/span 2;
+    }
+
+    .nin{
+        grid-row: 3/span 2;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="child first">1</div>
+        <div class="child sec" >2</div>
+        <div class="child thir">3</div>
+        <div class="child four">4</div>
+        <div class="child fiv">5</div>
+        <div class="child six">6</div>
+        <div class="child sev">7</div>
+        <div class="child eigt">8</div>
+        <div class="child nin">9</div>
+    </div>
+</body>
+
+</html>

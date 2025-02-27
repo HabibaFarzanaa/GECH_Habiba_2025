@@ -1,0 +1,40 @@
+.container{
+    /* border: 1px solid black; */
+    
+    /* margin-top: 10%;
+    margin-bottom: 50%;
+    margin-right: 40%;
+    margin-left: 50%; */
+
+    /* margin: 10% 30% 20% 20%; */
+
+    /* padding-left: 40%;
+    padding-right: 20%;
+    padding: 10%;
+    padding: 10%; */
+    padding: 5%;
+
+    text-align: center;
+   
+    
+}
+
+body{
+    background-color: beige;
+    background-image: url(./nature1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right-top;
+    background-attachment: fixed;
+    opacity: 1;
+}
+
+p{
+    font-weight: bolder;
+    font-size: larger;
+    margin: 8%;
+    padding: 50px;
+    background-clip: padding-box;
+    background-image: url(./black.png);
+    /* opacity: 0.5; */
+}

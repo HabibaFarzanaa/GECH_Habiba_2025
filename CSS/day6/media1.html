@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+    .container{
+        height: 60vh;
+        width: 80vw;
+        border: 2px solid black;
+        padding: 20px;
+        display:flex ;
+        gap: 10px;
+    }
+    .child{
+        height: 200px;
+        width: 200px;
+    }
+    .first{
+        background-color: aliceblue;
+    }
+
+    .sec{
+        background-color: rgb(50, 220, 50);
+    }
+
+    .thir{
+        background-color: rgb(115, 134, 151);
+    }
+
+    .four{
+        background-color: rgb(126, 71, 190);
+    }
+
+    .fiv{
+        background-color: rgb(74, 220, 234);
+    }
+
+    @media screen and (max-width:500px) {
+        .container{
+            flex-direction: column;
+        }
+        
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+    <div class="child first">1</div>
+    <div class="child sec">2</div>
+    <div class="child thir">3</div>
+    <div class="child four">4</div>
+    <div class="child fiv">5</div>
+</div>
+</body>
+</html>

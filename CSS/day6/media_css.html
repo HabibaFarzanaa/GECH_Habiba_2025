@@ -1,0 +1,31 @@
+<!-- /*Media is used to make the website responsive in all types of devices*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+        }
+
+        /*@media not|only media_type and (condition) and (condition) {
+            
+        }*/
+
+        @media only screen and (min-width:600px) and (max-width:800px) {
+            .container{
+                background-color: rgb(235, 235, 172);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quis harum ad quibusdam reiciendis consectetur est aspernatur eveniet repellendus amet, placeat perspiciatis asperiores quisquam molestiae consequuntur laborum possimus a pariatur.
+    </div>
+</body>
+</html>

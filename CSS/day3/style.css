@@ -1,0 +1,19 @@
+h1{
+    color: darkmagenta;
+    text-align: center;
+}
+
+nav:hover{
+    color: yello;
+
+}
+
+nav,a{
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    text-align: right;
+    background-color: darkmagenta;
+}

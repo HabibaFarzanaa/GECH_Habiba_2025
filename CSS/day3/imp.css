@@ -1,0 +1,21 @@
+.first{
+    border: 2px solid black;
+    background-color: yellow !important;
+}
+
+.sec{
+    background-color: green  ;
+}
+
+p{
+    border: 2px solid black;
+    background-color: red !important;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+body{
+        /* background-image: url(./selectors/nature1.jpg); */
+
+}

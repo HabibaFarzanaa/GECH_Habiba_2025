@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        
+    }
+    .container{
+        background-color: rgb(170, 210, 210);
+        width: 30vw;
+        height: 40vh;
+        border-radius: 10px;
+        margin: 40px auto auto;
+        margin-top: 100px;
+        padding: 20px;
+        box-shadow: 2px 2px 5px black;
+        
+    }
+
+    h1{
+        text-align: center;
+        margin: 20px;
+        text-shadow: 2px 1px 1px  purple;
+    }
+
+    .input-group{
+        width: 100%;
+        position: relative;
+    
+    }
+    .input-group input{
+        width: 100%;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 8px 15px;
+        font-size: 12px;
+        margin: 5px;
+
+    }
+
+    .icon{
+        font-size: 12px;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+
+    #submit{
+        width: 100%;
+        font: 20px;
+        border: 1px solid green;
+        /*transition: background-color 1s; ;*/
+        transition: all 1s;
+        padding: 10px ;
+        margin: 5px;
+        margin-top: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: rgb(114, 182, 192);
+    }
+
+    #submit:hover{
+        cursor: pointer;
+        background-color: rgb(32, 120, 150) ;
+        border: 1px solid rgb(11, 11, 11);
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Form</h1>
+        <form action="" method="post">
+            <div class="input-group">
+                <input type="text" name="name" id=" name" placeholder="Username">
+                <i class="fa-solid fa-user icon"></i>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" id=" name" placeholder="Enter Email">
+                <i class="fa-solid fa-envelope icon"></i>
+            </div>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
