@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method in string</title>
+</head>
+
+<body>
+    <h1>Method in string</h1>
+    <p>1. Length</p>
+    <p>2. Slice</p>
+    <p>3. substring</p>
+    <p>4. substr</p>
+    <p>5. Replace</p>
+    <p>6. uppercase</p>
+    <p>7. lowercase</p>
+    <p>8. Trim</p>
+    <p>9. indexof </p>
+    <p>10. start with</p>
+    <p></p>
+    <p></p>
+
+    <script>
+        //1. Length
+        let str1 = "Hellow World"
+        const len = str1.length
+        console.log(`The length of the string ${str1} is : ,${len}`); //simple and easy avoid
+        //console.log("The length of the string " + str1 + " is : " + len); //+ is used for concatenation.  concatenating string with number will give result as string
+        console.log("The length of the string ", str1, " is : ", typeof len); // , will preserve the datatype i.e it result number as datatype
+
+        //2. slice
+        let str2 = "javascript"
+        let str3 = str2.slice(2, 7);
+        console.log(` The sliced string is : ${str3}`);
+        console.log(str2[5]);
+        console.log("the sliced string is ", str2.slice(-8, -2));
+
+        //3. substring
+        let str4 = "HelloJavaScript"
+        let str5 = str4.substring(2, 7); //last index is excluded
+        console.log(`The string is ${str5}`);
+        console.log(`The string is ${str5.substring(-13, -9)}`);
+
+        //4. substr
+        let str6 = "HelloWorld";
+        let str7 = str6.substr(2, 7) //(start, length)
+        console.log(`The substr is ${str7}`);
+
+        let str8 = str6.substr(-8, 7) //(start, length)
+        console.log(`The substr is ${str8}`);
+
+        //5. replace
+        let str9 = "Java script";
+        let str10 = str9.replace("Java", "python");
+        console.log(`The string ${str9} replaced by ${str10}`);
+
+        //6. uppercase
+        let str11 = "habiba";
+        let str12 = str11.toUpperCase()
+        console.log("Upper case result is", str12);
+
+        //7. lowercase
+        let str13 = "FARZANA";
+        let str14 = str13.toLowerCase()
+        console.log("Upper case result is", str14);
+
+        //8. trim
+        let str15 = "              Hello            ";
+        let str16 = str15.trim()
+        console.log("Original ", str15);
+        console.log("After trimming", str16);
+
+        //9. indexof
+        let str17 = "Hello Javascript";
+        let index = str17.indexOf("ello")
+        console.log("Index of ello in Hello Javascript is ", index);
+
+        //10. start with
+        let str18 = "Hello Javascript";
+        let res = str18.startsWith("ello")
+        console.log("starts with  ", res);
+
+        //11. endswith
+        let str19 = "Hello Javascript";
+        let res1 = str19.endsWith("ello")
+        console.log("ends with  ", res1);
+
+
+        //12. includes
+        let str20 = "Hello Javascript";
+        let incl = str20.includes("ello")
+        console.log("Includes  ", incl);
+
+        //13. concat
+        
+
+
+    </script>
+</body>
+
+</html>
