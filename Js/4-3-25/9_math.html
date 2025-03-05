@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math libraray</title>
+</head>
+
+<body>
+    <script>
+        //math library
+        console.log("type of Math:", typeof Math);
+        console.log(Math);
+        console.log(Math.PI);
+
+        let var1 = 49;
+        console.log("sqrt of 49 ", Math.sqrt(var1));
+        console.log("2^3 :", Math.pow(2, 3));
+        console.log("floor:", Math.floor(3.999)); //rounds off to lowest value
+        console.log("floor:", Math.floor(3.9999999999999999));
+        console.log("floor:", Math.floor(-2.44));
+
+        console.log("Ciel:", Math.ceil(2.3));
+        console.log("Ceil", Math.ceil(21.8));
+
+        console.log("Round:", Math.round(2.3));
+        console.log("Round:", Math.round(21.8));
+        console.log("Round:", Math.round(-21.8));
+        console.log("Round:", Math.round(-21.3));
+
+        console.log("Random:", Math.random());
+        console.log("Random:", Math.floor(Math.random() * 11)); //includes 0
+        console.log("Random:", Math.ceil(Math.random() * 11)); //exclude zero but include 11
+        console.log("Random:", Math.floor(Math.random() * 10)) + 1; //include both zero and 11
+    </script>
+
+
+</body>
+
+</html>

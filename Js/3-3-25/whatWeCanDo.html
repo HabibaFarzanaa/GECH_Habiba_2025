@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>1. we can change the content of html</h3>
+    <p id="demo1">This is the existing content</p>
+    <h3>We can change the attributr html</h3>
+    <button type="button" onclick="document.getElementById('demo1').innerText='I totally tired'">Click Here</button>
+
+    <h3>We can insert image</h3>
+    <img src="./lightoff.jpg" alt="Not found" width="100px" height="100px" id="bulb_img">
+    <button type="button" onclick="document.getElementById('bulb_img').src='./lighton.jpg'">Turn on</button>
+    <button type="button" onclick="document.getElementById('bulb_img').src='./lightoff.jpg'">Turn Off</button>
+
+    <h3>3.We can change the css style</h3>
+    <p id="demo2">lorem</p>
+    <button type="button" onclick="document.getElementById('demo2').style.color='red'">Click Here</button>
+
+    <h3>4.We can hide the html code</h3>
+    <p id="demo3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque aut architecto impedit! Recusandae
+        iure cupiditate nisi delectus consequatur illum neque doloremque nam aspernatur quaerat hic quisquam, a,
+        repudiandae consequuntur vitae.</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'">Hide</button>
+
+    <h3>5.We can show the html code</h3>
+    <p id="demo3" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque aut architecto
+        impedit! Recusandae
+        iure cupiditate nisi delectus consequatur illum neque doloremque nam aspernatur quaerat hic quisquam, a,
+        repudiandae consequuntur vitae.</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='block'">Show</button>
+
+</body>
+
+</html>
