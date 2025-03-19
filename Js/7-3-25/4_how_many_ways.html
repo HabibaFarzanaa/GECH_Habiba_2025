@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How many ways</title>
+
+    <!-- 1. it is not recommended becuse js file will run first-->
+    <script src="./first.js"></script>
+
+    <!-- 3.js and html file will run simultaneously but whenever  js loaded successfully then it stop reading html document -->
+    <!-- It is not recommended -->
+    <script src="./first.js" async></script>
+
+    <!-- 4.js and html file will run simultaneously but whenever  js loaded successfully then it will not stop reading html document ie also load html code successfully-->
+    <!-- It is highly recommended -->
+    <script src="./first.js" async></script>
+
+    <style>
+        h1 {
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: brown;">How many ways we use external js in HTML </h1>
+    <ol>
+        <dl>1.Inside the head tag </dl>
+        <dd>It is not recommended becuse js file will run first</dd>
+        <dl>2. Inside the above body tag</dl>
+        <dd>It take some time to loop it is somewhat recommended</dd>
+        <dl>3. Using async inside the head</dl>
+        <dd>js and html file will run simultaneously but whenever js loaded successfully then it stop reading html
+            document. It is not recommended</dd>
+        <dl>4. Using defer inside the head</dl>
+        <dd>js and html file will run simultaneously but whenever js loaded successfully then it will not stop reading
+            html document ie also load html code successfully. It is highly recommended</dd>
+    </ol>
+
+    <!-- 2. time to loop it is somewhat recommended-->
+    <script src="./first.js"></script>
+
+
+</body>
+
+</html>

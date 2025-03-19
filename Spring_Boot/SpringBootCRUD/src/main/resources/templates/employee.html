@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employee List</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    h2 {
+        color: #333;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color: #007bff;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    table th, table td {
+        padding: 8px;
+        text-align: left;
+    }
+    table th {
+        background-color: #333;
+        color: white;
+    }
+    table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    table tr:hover {
+        background-color: #ddd;
+    }
+    a[href*="add-employee"] {
+        display: inline-block;
+        margin: 10px 0;
+        padding: 8px 16px;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 4px;
+    }
+    a[href*="edit-employee"] {
+        color: #FFC107;
+    }
+    a[href*="delete-employee"] {
+        color: #DC3545;
+    }
+</style>
+</head>
+<body>
+    <h2>Employee List</h2>
+    <a href="/employees/add-employee">Add Employee</a>
+    <table border="1">
+        <tr>
+            <th>ID</th><th>First Name</th><th>Last Name</th><th>Email</th><th>Phone</th><th>Department</th><th>Actions</th>
+        </tr>
+        <tr th:each="employee : ${employees}">
+            <td th:text="${employee.id}"></td>
+            <td th:text="${employee.firstName}"></td>
+            <td th:text="${employee.lastName}"></td>
+            <td th:text="${employee.email}"></td>
+            <td th:text="${employee.phone}"></td>
+            <td th:text="${employee.department}"></td>
+            <td>
+                <a th:href="@{/employees/edit-employee(id=${employee.id})}">Edit</a> |
+                <a th:href="@{/employees/delete-employee(id=${employee.id})}">Delete</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

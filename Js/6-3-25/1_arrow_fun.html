@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Arrow function</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+
+        </tbody>
+    </table>
+    <script>
+        //for single parameter paranthesis is not required [eg:num] , if no parameter is there then paranthesis is required [eg:()] 
+        const iseven = num => num % 2 == 0;
+
+        const res = iseven(4);
+        console.log(res);
+    </script>
+    <script>
+        const users = [
+            { firstName: "Pavan1", age: 23, address: "Hassan" },
+            { firstName: "Paven2", age: 23, address: "Hassan" },
+            { firstName: "Paven3", age: 23, address: "Hassan" },
+            { firstName: "Paven4", age: 23, address: "Hassan" },
+            { firstName: "Paven5", age: 23, address: "Hassan" },
+            { firstName: "Paven6", age: 23, address: "Hassan" },
+            { firstName: "Paven7", age: 23, address: "Hassan" },
+            { firstName: "Paven8", age: 23, address: "Hassan" },
+            { firstName: "Paven9", age: 23, address: "Hassan" },
+            { firstName: "Paven10", age: 23, address: "Hassan" },
+        ]
+
+        let content = "";
+        for (let item of users) {
+            content += `<tr>
+                <td>${item.firstName}</td>
+                <td>${item.age}</td>
+                <td>${item.address}</td>
+            </tr>`
+        }
+
+        console.log(content);
+        document.getElementById("table_body").innerHTML = content
+    </script>
+</body>
+
+</html>

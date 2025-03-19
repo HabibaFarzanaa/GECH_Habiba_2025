@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Employee</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    h2 {
+        color: #333;
+        text-align: center;
+    }
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    button {
+        width: 100%;
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0069d9;
+    }
+</style>
+</head>
+<body>
+    <h2>Edit Employee</h2>
+    <form action="/employees/edit-employee" method="post">
+        <input type="hidden" name="id" th:value="${employee.id}">
+        First Name: <input type="text" name="firstName" th:value="${employeedto.firstName}" required><br>
+        Last Name: <input type="text" name="lastName" th:value="${employeedto.lastName}" required><br>
+        Email: <input type="email" name="email" th:value="${employeedto.email}" required><br>
+        Phone: <input type="text" name="phone" th:value="${employeedto.phone}" required><br>
+        Department: <input type="text" name="department" th:value="${employeedto.department}" required><br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>

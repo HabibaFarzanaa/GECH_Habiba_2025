@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructuring</title>
+</head>
+
+<body>
+    <h1>object destructuring</h1>
+    <dt><b>Nested destructuring:</b>
+    <dd>Inside an array we are destructuring the object</dd>
+    <dd>We use curly braces inside the square brackets to destructure the object</dd>
+    </dt>
+    <script>
+        const users = [
+            { firstName: "Pavan1", age: 23, address: "Hassan" },
+            { firstName: "Paven2", age: 23, address: "Hassan" },
+            { firstName: "Paven3", age: 23, address: "Hassan" },
+        ]
+        const [{ firstName }, user2 , user3] = users;
+        console.log(firstName);//Nested destructuring: inside an array destructuring the object which only display firstname.
+        console.log(user2);
+        console.log(user3);
+
+    </script>
+</body>
+
+</html>

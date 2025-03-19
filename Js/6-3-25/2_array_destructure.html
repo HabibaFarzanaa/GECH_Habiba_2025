@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructure</title>
+</head>
+
+<body>
+    <h1>Array Destructuring</h1>
+    <p>
+        Destructuring means splitting the array values. We mainly use "<b>...rest operator</b>" to split the values and give
+        the result. Because if we manually try to split the array values we need to create multiple variable(1 variable
+        for 1 array value) which cause redundency. </p>
+
+    <script>
+        let array1 = ["item1", "item2", "item3", "item4"];
+        console.log(array1);
+        let var1 = array1[0];
+        let var2 = array1[1];
+        let var3 = array1[2];
+        let var4 = array1[3];
+        console.log(var1, var2, var3, var4);
+
+        let array2 = ["item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8"];
+        const [var5, var6, ...rest] = array2 //rest is called rest parameter and ...(3 dots) is spread operator which invoke all the rest values from the array
+        console.log("array2: ", var5, var6);
+        console.log("rest: ", rest);
+
+        let array3 = ["item1", "item2", "item3"];
+        const [var7, , var9] = array3 // Not assigning any variable and just giving the space will that particular arrray value
+        console.log("array3: ", var7, var9);
+    </script>
+
+   
+</body>
+
+</html>

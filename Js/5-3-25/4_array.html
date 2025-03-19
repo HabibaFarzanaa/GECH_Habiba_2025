@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array1 = [1, 2, 3, 4, 5, 6, 7];
+        console.log(array1);
+        console.log(array1[3]);
+
+        //push and pop
+        array1.push(23);
+        console.log("After pushing: ", array1);
+
+        const res = array1.pop();
+        console.log("The popped element is: ", res);
+        console.log("After poping: ", array1);
+
+        //shift and unshift
+        let array2 = [23, 45, 56];
+        array2.unshift(89);
+        console.log("Unshift array2: ", array2);
+        array2.shift();
+        console.log("Shift: ", array2);
+
+
+
+    </script>
+    <script>
+
+        console.log("-------------------------------------------------------");
+        let array3 = [12, "hii", true, null, { "name": "pavan" }]
+        console.log(array3);
+        console.log(typeof array3[4]);
+        console.log("-------------------");
+        for (let i of array3) {
+            console.log(typeof (i), ":", i);
+        }
+    </script>
+</body>
+
+</html>

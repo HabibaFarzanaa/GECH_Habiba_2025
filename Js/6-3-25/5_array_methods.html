@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+
+<body>
+    <h1>Array Method</h1>
+    <ol>
+        <li>For each</li>
+        <li>Map</li>
+        <li>Filter</li>
+        <li>Reduce</li>
+        <li>Sort</li>
+        <li>Splice(start, delete, insert)</li>
+        <li>Each</li>
+        <li>Some</li>
+    </ol>
+
+    <script>
+        //1.For Each
+
+        console.log("1. For each Loop");
+        const array1 = [1, 2, 3, 4, 5]
+        array1.forEach((curEle, index, array) => {
+            console.log(curEle * curEle, "index is", index, "in the array", array);
+        })
+
+        //real-time example
+        const users = [
+            { firstName: "Pavan1", age: 23, address: "Hassan" },
+            { firstName: "Paven2", age: 23, address: "Hassan" },
+            { firstName: "Paven3", age: 23, address: "Hassan" },
+        ]
+        users.forEach((curEle) => {
+            console.log(curEle.firstName);
+        })
+
+        //2.map
+        console.log("2.Map");
+        const array2 = [22, 24, 25, 26, 27, 28];
+        const array3 = array2.forEach((curEle) => {
+            return curEle * curEle;
+        })
+        console.log("Array2: ", array2);
+        console.log("Array3: ", array3);
+
+        const user1 = [
+            { firstName: "Pavan1", age: 23, address: "Hassan" },
+            { firstName: "Paven2", age: 23, address: "Hassan" },
+            { firstName: "Paven3", age: 23, address: "Hassan" },
+        ]
+        const user2 = user1.map((curEle) => {
+            return curEle.firstName
+        })
+        console.log("Firstname: ", user2);
+
+        //3. filter
+        console.log("3.Filter");
+        const array4 = [1, 2, 3, 4, 5, 6, 7, 8];
+        const array5 = array4.filter((curEle) => {
+            return curEle % 2 == 0;
+        })
+        console.log("Array1: ", array5);
+
+        //4.reduce - reduce to single value
+        //how it works: it hhas 3 keywords previous, current, return (return = previous + current)
+        /*previous | current | return 
+            1      |     2   |    3
+            3      |     3   |    6
+            6      |     4   |    10
+            10     |     5   |    15
+            15     |     6   |    21
+            21     |     7   |    28
+            28     |     8   |    36*/
+
+        console.log("4. Reduce");
+        array6 = [1, 2, 3, 4, 5, 6, 7, 8];
+        const res = array6.reduce((previous, current) => {
+            return previous + current
+        }, 4)//
+        console.log(`Sum of ${array6} values are ${res}`);
+
+        //5. Sort
+        console.log("5. Sort");
+        const array7 = [5, 3, 8, 1, 2];
+        array7.sort();
+        console.log("Sorted Array: ", array7);
+
+        const names = ["B", "A", "Z"];
+        names.sort();
+        console.log("Sorted Names: ", names);
+
+        //6. Splice
+        console.log("6. Splice");
+        const array8 = [10, 20, 30, 40, 50];
+        const arr9 = array8.splice(2, 1, 25, 35);
+        console.log("Array after Splice: ", arr9);
+
+        //7. Some
+        console.log("7. Some");
+        const array9 = [3, 5, 7, 9];
+        const hasEven = array9.some((num) => num % 2 === 0);
+        console.log("Array contains even number: ", hasEven);
+
+    </script>
+</body>
+
+</html>

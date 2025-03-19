@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <h1>Event</h1>
+    <p>1. Mouse Event</p>
+    <p>2. Keyboard Event</p>
+    <p>3. Form Event</p>
+
+    <h3 id="htag">Hello JS</h3>
+    <button type="button" onclick="handleclick()">Change_text using mouse event</button>
+    <button type="button" id="btn">change_text using keyboard event</button>
+    <input type="text" id="inputField" placeholder="Type something">
+    <p id="keyMsg"></p>
+    <script>
+        //1. Mouse events
+        const handleclick = () => {
+            const htag = document.querySelector("#htag");
+            htag.textContent = "Hi";
+        }
+
+        //2. Add event listener
+        const btn = document.querySelector("#btn");
+        const htag = document.querySelector("#htag");
+        btn.addEventListener("click", () => {
+            htag.textContent = 'Hello Habiba';
+        });
+
+        //2. Keyboard Events
+        //Triggered when the user presses or releases a key.
+        //Example: Key Press Event
+        document.getElementById("inputField").addEventListener("keypress", function (event) {
+            document.getElementById("keyMsg").innerText = "You pressed: " + event.key;
+        });
+
+    </script>
+
+    <h1>form</h1>
+    <input type="text" , id="username" />
+    <p id="result"></p>
+    <select name="" id="number">
+        <option value=""></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select>
+    <script>
+        const username = document.querySelector("#username");
+        const result = document.querySelector("#result");
+        username.addEventListener("input", () => {
+            result.innerText = username.value;
+        })
+
+        document.querySelector("#number").addEventListener("change", () => {
+            console.log("Select value is changes");
+        })
+        document.querySelector("#username").addEventListener("blur", () => {
+            console.log("Blurr");
+        })
+        document.querySelector("#username").addEventListener("focus", () => {
+            console.log("Hello world");
+        })
+    </script>
+
+    <form action="" id="contactForm">
+        <input type="text" name="name" id="name" placeholder="Name" />
+        <input type="text" name="name" id="name" placeholder="Name" />
+        <button type="submit">submit</button>
+
+    </form>
+
+    <script>
+        const contactForm = document.querySelector("#contactForm")
+        contactForm.addEventListener("submit", (event) => {
+            event.preventDefault() //default event is refreshing the form
+            console.log("Hello");
+        })
+    </script>
+
+    
+
+
+
+</body>
+
+</html>

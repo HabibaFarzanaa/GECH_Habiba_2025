@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Student & Employee Management</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;            
+            line-height: 1.6;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+
+            background-color:silver;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 45%;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        .card-header {
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        
+        .student-header {
+            background-color: #007bff;
+        }
+        
+        .employee-header {
+            background-color: #28a745;
+        }
+        
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .card-title {
+            font-size: 24px;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        
+        .card-text {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-student {
+            background-color: #007bff;
+        }
+        
+        .btn-employee {
+            background-color: #28a745;
+        }
+        
+        .btn:hover {
+            opacity: 0.9;
+        }
+        
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .card {
+                width: 100%;
+                max-width: 500px;
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+                padding: 15px 0;
+            }
+            
+            .card-title {
+                font-size: 20px;
+            }
+            
+            .card-body, .card-header {
+                padding: 15px;
+            }
+            
+            .btn {
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Student & Employee Management</h1>
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-header student-header">
+                <h2 class="card-title">Student Management</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Access the student portal to manage student records, add new students, edit existing information, or remove students from the database.</p>
+                <a href="/students" class="btn btn-student">Manage Students</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header employee-header">
+                <h2 class="card-title">Employee Management</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Access the employee portal to manage employee records, add new employees, edit existing information, or remove employees from the database.</p>
+                <a href="/employees" class="btn btn-employee">Manage Employees</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

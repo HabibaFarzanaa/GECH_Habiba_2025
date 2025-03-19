@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting HTML</title>
+</head>
+
+<body>
+    <h1>Selecting the Html inside js</h1>
+    <dl id="fir_dl">1. Using getElementById</dl>
+    <dl class="sec_dl">2. Using getElementsByClass</dl>
+    <dl class="sec_dl">2. Using getElementsByClass</dl>
+    <dl class="sec_dl">2. Using getElementsByClass</dl>
+    <dl id="thir_dl">3. Using QuerySelector</dl>
+    <script>
+        //1. Using getElementById
+        const first_dl = document.getElementById("fir_dl")
+        first_dl.style.color = "red";
+
+        //2. Using getElementsByClass
+        const secnd_dl = document.getElementsByClassName("sec_dl")
+        console.log(secnd_dl);
+        secnd_dl[0].style.color = "green";
+        //console.log(secnd_dl[1]);
+
+        //3. querySelector
+        const third_dl = document.querySelector("#thir_dl");
+        third_dl.style.color = "blue";
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prmomise</title>
+</head>
+
+<body>
+    <h1>Promise in JS</h1>
+    <p>Promise is the future value where it can be solved to rejected</p>
+    <pre>
+        const var_name = new Promise((resolve, reject)=>{
+            //code
+        })
+    </pre>
+
+    <script>
+        const items = ["meat", "salt", "rice", "curd"];
+        const result = new Promise((resolve, reject) => {
+            if (items.includes("meat") && items.includes("Salt") && items.includes("rice")) {
+                return ("biryani")
+            } else {
+                reject("cannot make biryani")
+            }
+        })
+
+        //1 then and catch
+        result.then(value => {
+            console.log("with then: ", value);
+        }).catch(error => console.log("with then :", error));
+
+        //2. using
+        const biryani = async () => {
+            try {
+                const res = await result;
+                console.log("with await: ", res);
+            } catch (error) {
+                console.log("with await:", error);
+            }
+        }
+        biryani()
+    </script>
+</body>
+
+</html>
