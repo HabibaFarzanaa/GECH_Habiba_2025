@@ -49,9 +49,7 @@ public class LoopingStatement {
 //		}
 		
 		
-		
-		
-		
+//		FOR EACH LOOP
 //		for(int a:array1) {
 //			System.out.println(a);
 //		}
