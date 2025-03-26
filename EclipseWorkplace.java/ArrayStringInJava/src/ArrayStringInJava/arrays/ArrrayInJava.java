@@ -21,6 +21,16 @@ public class ArrrayInJava {
 			 * 2D array - In the form of matrix/table 
 			 * int [][] array1 = new int[3][3];
 		 * ------------------------------------------------------
+		 * Drawbacks:
+		 * We cannot extends the size of the array
+		 * we cannot store the multiple type of element
+		 * we delete the array, it will not shrink
+		 * To overcome the drawbacks we go for collection.
+		 * 
+		 * Advantages:
+		 * Random access
+		 * Type casting is not required inside the array
+		 * 
 		 */
 		
 		int [] arr = new int[5];

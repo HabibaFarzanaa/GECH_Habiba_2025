@@ -1,5 +1,5 @@
 package Encapsulation;
-
+//Hiding the content of the class using private method then generating the getter and setters
 class Student {
 	private String name;
 	private int age;

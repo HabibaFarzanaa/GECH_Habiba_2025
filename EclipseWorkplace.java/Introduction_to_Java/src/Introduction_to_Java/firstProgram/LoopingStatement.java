@@ -1,6 +1,8 @@
 package Introduction_to_Java.firstProgram;
 
-public class LoopingStatement {
+public cl
+
+ass LoopingStatement {
 
 	public static void main(String[] args) {
 
@@ -40,7 +42,6 @@ public class LoopingStatement {
 		while(j < array1.length) {
 			System.out.println(array1[j]);
 			j++;
-			
 		}
 		
 		

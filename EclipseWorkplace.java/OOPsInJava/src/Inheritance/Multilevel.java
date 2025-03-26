@@ -17,6 +17,7 @@ class ChildClass extends ParentClass{
 		System.out.println("This is Class method");
 	}
 }
+
 public class Multilevel {
 	public static void main(String[] args) {
 		GrandParentClass gc = new GrandParentClass();

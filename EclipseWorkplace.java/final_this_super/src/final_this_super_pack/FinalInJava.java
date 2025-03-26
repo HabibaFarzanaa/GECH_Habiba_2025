@@ -28,9 +28,11 @@ public class FinalInJava {
 	public static void main(String[] args) {
 
 		/*
-		 * final -> we can't change the value variables, method, class variables ->the
-		 * variable value cannot be changed method -> we cannoot override final class
-		 * ->we cannot extends that class
+		 * final -> we can't change the value 
+		 * variables, method, class 
+		 * variables->the variable value cannot be changed 
+		 * method -> we cannot override 
+		 * final class->we cannot extends that class
 		 */
 
 		final double PI = 3.14;

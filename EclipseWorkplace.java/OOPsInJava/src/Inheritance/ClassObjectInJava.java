@@ -26,16 +26,17 @@ public class ClassObjectInJava {
 		 * Behaviour -> action
 		 * We can assign only two modifiers in class ie public and private
 		 * Multiple class can be created in the single file but public keyword should not be given to other class rather filename class
-		 * --------------------------------------------------------------
+		 * ------------------------------------------------------------------
 		 * Object: 
 		 * Object is implementation of class(state and action) 
+		 * ------------------------------------------------------------------
 		 * example: Student
-		 * -----------------------------------------------------------------------
+		 * ------------------------------------------------------------------
 		 * Property:
 		 * USN
 		 * Name
 		 * Branch
-		 * ---------------------------------------------------------------
+		 * ------------------------------------------------------------------
 		 * Action:
 		 * isPlaying()
 		 * isSleeping()

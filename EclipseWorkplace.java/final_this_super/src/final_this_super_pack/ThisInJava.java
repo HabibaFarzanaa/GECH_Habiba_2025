@@ -37,6 +37,7 @@ public class ThisInJava {
 		 *  2. Used to refer the instance class
 		 *  3. Used to refer the method of the instance
 		 * 
+		 * Super Keyword: access current class constructor, 
 		 */
 		Person1 per = new Person1("Priya",19);
 		per.display();

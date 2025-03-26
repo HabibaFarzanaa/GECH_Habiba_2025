@@ -23,12 +23,12 @@ public class InheritanceInJava{
 		/*
 		 * Inheritance
 		 * extending the properties of parent class to child class
-		 * properties(child, action(behavious)
+		 * properties(child, action(behaviours)
 		 * 
 		 * types:
 		 * 1.single level
 		 * 2.multilevel
-		 * 3.heirarchial level
+		 * 3.Heirarchial level
 		 * 4. hybrid
 		 * 5. multiple - not possible in java
 		*/
