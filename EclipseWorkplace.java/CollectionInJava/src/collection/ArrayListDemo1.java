@@ -38,10 +38,7 @@ public class ArrayListDemo1 {
 			//int i=itr.next();
 			System.out.println(itr.next()+" ");
 		}
-		
-		
-		
-
+	
 	}
 
 }

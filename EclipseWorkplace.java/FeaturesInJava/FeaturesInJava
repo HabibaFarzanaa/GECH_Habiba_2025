@@ -1,0 +1,124 @@
+	Java 8 features
+	---------------
+	1. Lamda expression
+	2. Functional interface
+	3. predicate
+	4. consumer
+	5. supplier
+	6. Function
+	7. Stream API
+	
+===========================================================================	
+	Lambda expression:
+	------------------
+	
+	1. It also called anonymous function(withhout name).
+	2. there is no return type
+	3. There is no access modifiers
+	4. *Without functional interface we can't make use of lambda interface
+============================================================================	
+	How we normally add the number:
+	-------------------------------
+	public int add(int a, int b){
+		return a+b;
+	}
+	
+	Using labda expression:
+	-----------------------
+	int a , int b ->{
+		return a+b;
+	} 
+==========================================================	
+	2.
+	public String findlength(String s){
+		return s.length();
+	}
+	
+	(String s) -> {return s.length()}
+===========================================================
+
+	3.
+	public void print (){
+		syso("Hello World");
+	}
+============================================================
+	
+	IMPORTANT POINTS:
+	-----------------	
+	
+	1. No need  to specify the type of the data
+		(a,b)->{
+			return a+b;
+		}
+	
+	2. If the statement is single line then not require {} and return 
+		(s)->s.length()
+		
+	3. If the statements is single line then no need to use ()
+		s->s.length() instead of (s)->s.length()
+		
+	4.If there is no parameter then ()  is must.
+		()->{syso("Hello world")}
+		
+	5. If there is a multiple parameter then it need to separate by coma ,
+		(a,b) -> a+b
+
+=============================================================================
+	FUNCTIONAL INTERFACE:
+	
+	*Interface contain only one abstract method
+	example: comparator
+	
+	*@functionalInterface -> functional interface
+=============================================================================		
+	PREDICATE:
+	
+	It will holds the conditions
+================================================================================
+	Consumer:
+		 
+		it will consumes the value but wont return anything
+================================================================================
+	Supplier
+	
+	 It wont take anything but it returns the value
+
+================================================================================
+	Consumer:
+		 
+		it will consumes the value but wont return anything
+================================================================================
+	
+	collection
+	===========
+	to represent a group of individual object as a single entity then we should go for 	collection
+	
+	
+	streams
+	==========
+	to work with * object or collection the we should go for streams
+	
+	1.source
+	=============
+	on which u are applying the stream
+	
+	2.intermediate operation
+	==============================
+	the operation will return another string
+	
+	3.termination operation
+	===========================
+	*it will terminate the string
+	*after applying the termination operation on stream we cannot reuse it
+	*for each stream we can only one termination operation
+	
+	
+	example
+	==============
+	list<Integer> list=new ArrayList<>();
+	list.add(12);
+	list.add(10);
+	list.stream().filter(x->x%2===0).count();
+	count()-is termination
+	filter is the intermediate
+	list is the source

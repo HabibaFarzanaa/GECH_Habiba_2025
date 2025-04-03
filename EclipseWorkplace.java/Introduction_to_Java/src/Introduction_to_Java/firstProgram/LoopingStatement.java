@@ -1,8 +1,6 @@
 package Introduction_to_Java.firstProgram;
 
-public cl
-
-ass LoopingStatement {
+public class LoopingStatement {
 
 	public static void main(String[] args) {
 

@@ -1,7 +1,5 @@
 package collection;
-
 public class CollectionInJava {
-
 	public static void main(String[] args) {
 		/*
 		 * Collection is a root interface of collection hierarchy
@@ -15,7 +13,7 @@ public class CollectionInJava {
 		 *  
 		 *  Advantages if an array;
 		 *  1.Random access
-		 *  2. Type safety - the elements inside the array is based on the datatype
+	 *  2. Type safety - the elements inside the array is based on the datatype
 		 *  3. Type casting - to print elements in array, no need to type cast
 		 *   
 		*/
@@ -26,5 +24,4 @@ public class CollectionInJava {
 		System.out.println((int)arr[0]);// no need of type casting
 		System.out.println(arr[1] = 'd');//print ASCII value 
 	}
-
 }
