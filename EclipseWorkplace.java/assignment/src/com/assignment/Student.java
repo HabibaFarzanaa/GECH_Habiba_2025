@@ -27,7 +27,7 @@ public class Student {
 		Student student3 = new Student("Bushra", 23, 80);
 		Student student4 = new Student("Mohan", 23, 50);
 		Student student5 = new Student("pavan", 23, 30);
-		System.out.println(String<> (s)->s.filter.);
+
 		
 	}
 

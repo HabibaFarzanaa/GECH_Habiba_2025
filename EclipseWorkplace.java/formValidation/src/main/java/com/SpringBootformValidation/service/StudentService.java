@@ -1,5 +1,7 @@
 package com.SpringBootformValidation.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.SpringBootformValidation.DTO.StudentDTO;
@@ -17,6 +19,11 @@ public class StudentService {
 	}
 
 
+	public List<Student> getAllStudents() {
+		List<Student> students = studentRepository.findAll();
+		return students;
+	}
+
 	public void saveStudent(StudentDTO studentDTO) {
 		Student student = new Student();
 		student.setName(studentDTO.getName());
@@ -26,4 +33,34 @@ public class StudentService {
 		studentRepository.save(student);
 	}
 
+
+	public void deleteStudent(Long id) {
+		Student student = studentRepository.findById(id).get();
+		studentRepository.delete(student);
+		
+	}
+
+
+	public StudentDTO editStudent(Long id) {
+		Student student= studentRepository.findById(id).get();
+		StudentDTO studentDTO=new StudentDTO();
+		studentDTO.setName(student.getName());
+		studentDTO.setAge(student.getAge());
+		studentDTO.setEmail(student.getEmail());
+		studentDTO.setPassword(student.getPassword());
+		return studentDTO;
+	}
+
+
+	public void updatedStudent(StudentDTO studentDTO, Long id) {
+		// TODO Auto-generated method stub
+		Student student= studentRepository.findById(id).get();
+		student.setName(studentDTO.getName());
+		student.setAge(studentDTO.getAge());
+		student.setEmail(studentDTO.getEmail());
+		student.setPassword(studentDTO.getPassword());
+		studentRepository.save(student);
+	}
+
+	
 }
