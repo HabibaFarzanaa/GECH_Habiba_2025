@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Add Student</title>
+    <title>Edit Student</title>
     <style>
         /* Basic Styling */
         body {
@@ -89,34 +89,36 @@
 
 <body>
     <div class="form-container">
-        <h1>Add Student</h1>
-        <form th:action="@{/add-student}" enctype="multipart/form-data"  method="post" th:object="${studentDTO}">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Enter your name" th:field="*{name}">
+        <h1>Edit Student</h1>
+        <form th:action="@{/edit-student(id=${student.id})}" enctype="multipart/form-data"  method="post" th:object="${studentDTO}">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" th:field="*{name}">
             <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
 
-            <label for="age">Age</label>
-            <input type="number" id="age" placeholder="Enter your age" th:field="*{age}">
+            <label>Age</label>
+            <input type="number" placeholder="Enter your age" th:field="*{age}">
             <p th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></p>
 
-            <label for="email">Email</label>
-            <input type="email"  id="email" placeholder="Enter your email" th:field="*{email}">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" th:field="*{email}">
             <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your password" th:field="*{password}">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" th:field="*{password}">
             <p th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></p>
             
             <label for="image">Image</label>
+            <img alt="image" height="100px" width="100px" th:src="@{'images/'+${student.imagepath}}"><br>
             <input type="file" id="image" th:field="*{image}"><br>
             <p th:if="${#fields.hasErrors('image')}" th:errors="*{image}"></p>
             
             <label for="document">Document</label>
+			<a th:href="@{'/documents/' + ${student.documentpath}}" target="_blank">View existing document</a><br>
 			<input type="file" id="document" th:field="*{document}"><br>
 			<p th:if="${#fields.hasErrors('document')}" th:errors="*{document}"></p>
+			            
 
-
-            <input type="submit" value="Submit">
+            <input type="submit" value="Edit student">
         </form>
     </div>
 </body>

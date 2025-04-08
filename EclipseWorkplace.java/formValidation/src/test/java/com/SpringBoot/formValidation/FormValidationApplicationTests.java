@@ -1,4 +1,4 @@
-package com.SpringBootformValidation;
+package com.SpringBoot.formValidation;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

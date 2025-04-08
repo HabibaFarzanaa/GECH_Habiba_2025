@@ -1,4 +1,4 @@
-package com.SpringBootformValidation;
+package com.SpringBoot.formValidation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

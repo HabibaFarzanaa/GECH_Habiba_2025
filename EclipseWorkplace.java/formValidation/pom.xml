@@ -12,7 +12,7 @@
 	<artifactId>formValidation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>formValidation</name>
-	<description>Demo project for Spring Boot for Form validation</description>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -67,11 +67,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.simpleSpringBoot</groupId>
-			<artifactId>FirstWebApp</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
