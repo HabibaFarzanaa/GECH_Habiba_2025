@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-template-rows: 200px;
+            background-color: rgb(209, 130, 187);
+            gap: 20px;
+
+            border: 10px solid black;
+
+        }
+
+        .container {
+            background-color: rgb(84, 195, 114);
+            border: 1px solid black;
+            box-sizing: border-box;
+            grid-auto-rows: minmax(200px, auto);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            Hi!!!
+        </div>
+        <div class="container">
+            Hi!!!
+        </div>
+        <div class="container">
+            Hi!!!
+        </div>
+        <div class="container">
+            Hi!!!
+        </div>
+        <div class="container">
+            Hi!!!
+        </div>
+    </div>
+</body>
+
+</html>
